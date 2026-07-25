@@ -64,3 +64,16 @@ body {
   color: goldenrod;
   text-align: center;
 }
+
+.form-control {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 150px;
+    margin: 5px;
+}
+
+.radio-inline {
+    font-size: 18px;
+    margin: 5px;
+}
