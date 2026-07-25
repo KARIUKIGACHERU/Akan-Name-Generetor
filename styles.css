@@ -1,3 +1,7 @@
-body {
-  background-color: rgb(18, 114, 28);
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: fantasy;
+  color: rgb(145, 203, 203);
 }
