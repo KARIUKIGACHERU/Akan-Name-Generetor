@@ -31,3 +31,18 @@ function readData() {
     const female = document.getElementById("female").checked;
 
 }
+
+if (day < 1 || day > 31) {
+        alert("Please enter a valid day.");
+        return;
+    }
+
+    if (month < 1 || month > 12) {
+        alert("Please enter a valid month.");
+        return;
+    }
+
+    if (!male && !female) {
+        alert("Please select a gender.");
+        return;
+    }
