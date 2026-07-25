@@ -20,3 +20,14 @@ clear.addEventListener("click", function () {
     resultDiv.innerHTML = "";
     resultDiv.style.display = "none";
 });
+
+function readData() {
+
+    const day = Number(document.getElementById("dd").value);
+    const month = Number(document.getElementById("mm").value);
+    const year = Number(document.getElementById("yy").value);
+
+    const male = document.getElementById("male").checked;
+    const female = document.getElementById("female").checked;
+
+}
