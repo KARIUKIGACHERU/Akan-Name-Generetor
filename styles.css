@@ -56,3 +56,11 @@ body {
     object-fit: cover;
     border-radius: 5px;
 }
+
+.response {
+  font-size: 25px;
+  background-color: white;
+  font-family: cursive;
+  color: goldenrod;
+  text-align: center;
+}
