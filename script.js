@@ -30,8 +30,6 @@ function readData() {
     const male = document.getElementById("male").checked;
     const female = document.getElementById("female").checked;
 
-}
-
 if (day < 1 || day > 31) {
         alert("Please enter a valid day.");
         return;
@@ -46,3 +44,28 @@ if (day < 1 || day > 31) {
         alert("Please select a gender.");
         return;
     }
+    const birthday = new Date(year, month - 1, day);
+    const dayIndex = birthday.getDay();
+
+    let akanName = "";
+
+    if (male) {
+        akanName = maleNames[dayIndex];
+    } else {
+        akanName = femaleNames[dayIndex];
+    }
+
+    const days = [
+        "Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"
+    ];
+
+    resultDiv.style.display = "block";
+
+    resultDiv.innerHTML = `
+        <p class="resultParagraph">
+            You were born on <strong>${days[dayIndex]}</strong>.<br><br>
+            Your Akan name is <strong>${akanName}</strong>.
+        </p>
+    `;
+}
