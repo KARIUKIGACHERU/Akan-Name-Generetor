@@ -40,3 +40,19 @@ body {
 .akan a {
   color: darkslategray;
 }
+
+.akan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+}
+
+.akan img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
