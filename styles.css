@@ -1,21 +1,20 @@
-
 h1 {
   text-align: center;
   font-size: 60px;
   font-family: fantasy;
   color: rgb(145, 203, 203);
 }
-
+ 
 body {
   background-color: rgb(18, 114, 28);
 }
-
+ 
 .akan p {
   text-align: justify;
   font-size: 20px;
   font-style: italic;
 }
-
+ 
 #akanForm {
     width: 45%;
     margin: 20px auto;
@@ -26,37 +25,43 @@ body {
     font-size: 20px;
     background-color: white;
 }
+ 
 .form-section {
     padding: 15px;
 }
-
+ 
 .akan h2 {
   text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
 }
-
+ 
 .akan a {
   color: darkslategray;
 }
-
+ 
 .akan {
+    text-align: center;
+    margin: 20px 0;
+}
+ 
+.akan-images {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap;
-    margin: 20px 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
-
+ 
 .akan img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
-
+ 
 .response {
   font-size: 25px;
   background-color: white;
@@ -64,7 +69,8 @@ body {
   color: goldenrod;
   text-align: center;
 }
-
+ 
+/* Basic styling for the form controls, since Bootstrap is not linked */
 .form-control {
     padding: 8px;
     border-radius: 5px;
@@ -72,12 +78,12 @@ body {
     width: 150px;
     margin: 5px;
 }
-
+ 
 .radio-inline {
     font-size: 18px;
     margin: 5px;
 }
-
+ 
 .btn {
     padding: 8px 16px;
     border-radius: 5px;
@@ -86,23 +92,34 @@ body {
     font-size: 16px;
     margin: 5px;
 }
-
+ 
 .btn-success {
     background-color: rgb(51, 255, 0);
 }
-
+ 
 .btn-danger {
     background-color: rgb(214, 11, 11);
     color: white;
 }
-
+ 
 .row {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
     flex-wrap: wrap;
 }
-
-.form-col {
+ 
+.form-col,
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 45%;
 }
+ 
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
