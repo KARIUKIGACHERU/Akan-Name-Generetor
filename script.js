@@ -16,3 +16,7 @@ form.addEventListener("submit", function (event) {
 });
 
 
+clear.addEventListener("click", function () {
+    resultDiv.innerHTML = "";
+    resultDiv.style.display = "none";
+});
