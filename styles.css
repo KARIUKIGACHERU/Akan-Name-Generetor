@@ -26,3 +26,17 @@ body {
     font-size: 20px;
     background-color: white;
 }
+.form-section {
+    padding: 15px;
+}
+
+.akan h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.akan a {
+  color: darkslategray;
+}
